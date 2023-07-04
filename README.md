@@ -1,14 +1,9 @@
 # LanzarDados
 
 Este proyecto es un pequeño simulador de lanzamiento de 2 dados.
-Al iniciar el programa la aplicación muestra una imagen de 2 dados lanzados, posteriormente la aplicación
-entra al simulador para lanzar los dados, dentro del simulador la aplicación muestra el título y el botón de
-"LANZAR DADOS", cuando se presiona inicialmente el botón "LANZAR DADOS", la aplicación muestra los 2 dados y
-el numero obtenido.
-
-Inicio de la aplicación
-
-![app1](https://github.com/darkcrow-dev/LanzarDados/assets/108247794/eb5d9c1e-9f63-4d90-af53-7b74f57438e0)
+Al iniciar el programa la aplicación entra al simulador para lanzar los dados, dentro del simulador la aplicación
+muestra el título y el botón de "LANZAR DADOS", cuando se presiona inicialmente el botón "LANZAR DADOS", la aplicación
+muestra los 2 dados y el numero obtenido.
 
 Simulador para tirar dados
 
