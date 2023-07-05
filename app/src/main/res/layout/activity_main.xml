@@ -7,18 +7,38 @@
     android:background="@drawable/table_background"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/titulo"
+    <ImageView
+        android:id="@+id/agregarBoton"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:text="SIMULADOR DE LANZAMIENTO DE DADOS"
-        android:textSize="22sp"
-        android:textStyle="bold"
+        android:layout_height="0dp"
+        android:src="@drawable/plus_button"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"></ImageView>
+
+    <ImageView
+        android:id="@+id/restarBoton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/minus_button"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
-        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"></ImageView>
+
+    <TextView
+        android:id="@+id/dadosIndicador"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="6 DADOS"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
         app:layout_constraintTop_toTopOf="@+id/guideline2"></TextView>
 
     <ImageView
@@ -27,25 +47,77 @@
         android:layout_height="120dp"
         android:src="@drawable/dice_one"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintEnd_toStartOf="@+id/dado2"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="@+id/guideline3"></ImageView>
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.091"></ImageView>
 
     <ImageView
         android:id="@+id/dado2"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:src="@drawable/dice_six"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/dice_two"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toTopOf="@+id/guideline3"></ImageView>
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.091"></ImageView>
+
+    <ImageView
+        android:id="@+id/dado3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/dice_three"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/dado4"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/dado1"
+        app:layout_constraintVertical_bias="0.446"></ImageView>
+
+    <ImageView
+        android:id="@+id/dado4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/dice_four"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/dado2"
+        app:layout_constraintVertical_bias="0.463"></ImageView>
+
+    <ImageView
+        android:id="@+id/dado5"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/dice_five"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/dado6"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/dado1"
+        app:layout_constraintVertical_bias="0.923"></ImageView>
+
+    <ImageView
+        android:id="@+id/dado6"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/dice_six"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/dado2"
+        app:layout_constraintVertical_bias="0.923"></ImageView>
 
     <Button
         android:id="@+id/botonLanzarDados"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LANZAR&#10;DADOS"
+        android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
@@ -80,17 +152,25 @@
         app:layout_constraintGuide_percent="0.96" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5" />
-
-    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.52" />
+        android:visibility="gone"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.78" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
