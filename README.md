@@ -12,25 +12,30 @@ Al iniciar el programa la aplicación muestra una imagen de pantalla de inicio, 
 
 <p>
   <br>Menú de la aplicación
-  <br>Iconos de la pantalla de menú realizado por <b>Delapouite</b> de www.flaticon.com
+  <br>Iconos de la pantalla de menú realizado por <b>Delapouite</b> de https://game-icons.net/
 </p>
 
 ![app1](https://github.com/darkcrow-dev/LanzarDados/assets/108247794/cb58ee58-7331-4636-96db-b82d487b0222)
 
-Inicio del simulador
+<p>
+  <br>Inicio del simulador
+  <br>Iconos de los botones agregar y restar la pantalla del simulador realizado por <b>Freepik</b> de www.flaticon.com
+</p>
 
 ![app0](https://github.com/darkcrow-dev/LanzarDados/assets/108247794/a641e1b1-fa6c-41bb-9592-c4df4c69d544)
 
 <p>
   <br>Usuario lanza los dados 
-  <br>Iconos de la pantalla de menú realizado por <b>Delapouite</b> de www.flaticon.com
+  <br>Iconos de los dados del juego realizado por <b>Delapouite</b> de https://game-icons.net/
+  <br>Iconos de los botones agregar y restar la pantalla del simulador realizado por <b>Freepik</b> de www.flaticon.com
 </p>
 
 ![app1](https://github.com/darkcrow-dev/LanzarDados/assets/108247794/293c1e23-404d-4ff4-a883-1ac3cf5497db)
 
 <p>
   <br>Usuario lanza de nuevo los dados con diferente cantidad de dados
-  <br>Iconos de la pantalla de menú realizado por <b>Delapouite</b> de www.flaticon.com
+  <br>Iconos de los dados del juego realizado por <b>Delapouite</b> de https://game-icons.net/
+  <br>Iconos de los botones agregar y restar la pantalla del simulador realizado por <b>Freepik</b> de www.flaticon.com
 </p>
 
 ![app2](https://github.com/darkcrow-dev/LanzarDados/assets/108247794/26992a95-c85b-4525-af70-16479e8a174f)
