@@ -13,7 +13,7 @@ import android.widget.TextView
 import kotlin.random.Random
 import kotlin.random.nextInt
 
-class Menu : AppCompatActivity() {
+class MenuActivity : AppCompatActivity() {
     private lateinit var botonJugar: Button
     private lateinit var botonInformacion: Button
     private lateinit var imagenDado1: ImageView
