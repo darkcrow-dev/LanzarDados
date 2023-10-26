@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline2"></ImageView>
 
     <ImageView
-        android:id="@+id/restarBoton"
+        android:id="@+id/quitarBoton"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:src="@drawable/minus_button"
@@ -34,7 +34,7 @@
         android:gravity="center"
         android:text="6 DADOS"
         android:textColor="@color/white"
-        android:textSize="38sp"
+        android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guideline9"
@@ -53,82 +53,76 @@
 
         <LinearLayout
             android:id="@+id/parDados1"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:weightSum="1"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="0dp">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
 
             <ImageView
                 android:id="@+id/dado1"
-                android:layout_weight="0.6"
-                android:src="@drawable/dice_one"
                 android:layout_width="120dp"
-                android:layout_height="120dp">
-            </ImageView>
+                android:layout_height="120dp"
+                android:layout_weight="0.6"
+                android:src="@drawable/dice_one"></ImageView>
 
             <ImageView
                 android:id="@+id/dado2"
-                android:layout_weight="0.4"
-                android:src="@drawable/dice_two"
                 android:layout_width="120dp"
-                android:layout_height="120dp">
-            </ImageView>
+                android:layout_height="120dp"
+                android:layout_weight="0.4"
+                android:src="@drawable/dice_two"></ImageView>
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/parDados2"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:weightSum="1"
-            android:visibility="visible"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="0dp">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="1">
 
             <ImageView
                 android:id="@+id/dado3"
-                android:layout_weight="0.6"
-                android:src="@drawable/dice_three"
                 android:layout_width="120dp"
-                android:layout_height="120dp">
-            </ImageView>
+                android:layout_height="120dp"
+                android:layout_weight="0.6"
+                android:src="@drawable/dice_three"></ImageView>
 
             <ImageView
                 android:id="@+id/dado4"
-                android:layout_weight="0.4"
-                android:src="@drawable/dice_four"
                 android:layout_width="120dp"
-                android:layout_height="120dp">
-            </ImageView>
+                android:layout_height="120dp"
+                android:layout_weight="0.4"
+                android:src="@drawable/dice_four"></ImageView>
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/parDados3"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:weightSum="1"
-            android:visibility="visible"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="0dp">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="1">
 
             <ImageView
                 android:id="@+id/dado5"
-                android:layout_weight="0.6"
-                android:src="@drawable/dice_five"
                 android:layout_width="120dp"
-                android:layout_height="120dp">
-            </ImageView>
+                android:layout_height="120dp"
+                android:layout_weight="0.6"
+                android:src="@drawable/dice_five"></ImageView>
 
             <ImageView
                 android:id="@+id/dado6"
-                android:layout_weight="0.4"
-                android:src="@drawable/dice_six"
                 android:layout_width="120dp"
-                android:layout_height="120dp">
-            </ImageView>
+                android:layout_height="120dp"
+                android:layout_weight="0.4"
+                android:src="@drawable/dice_six"></ImageView>
         </LinearLayout>
 
     </LinearLayout>
@@ -139,6 +133,7 @@
         android:layout_height="wrap_content"
         android:text="LANZAR&#10;DADOS"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
@@ -192,6 +187,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.75" />
+        app:layout_constraintGuide_percent="0.78" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
