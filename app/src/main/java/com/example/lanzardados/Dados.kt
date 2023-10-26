@@ -18,9 +18,11 @@ class Dados(private var imagenesDados: Array<ImageView>, private var dadosImagen
 
     fun inicializarDados(contador: Int){
         if(contador > 5){
+            botonPulsado = false
             dadosCantidad = 0
             val texto = "0 DADOS"
             dadosIndicador.text = texto
+            visualizarDados(dadosCantidad)
             return
         }
 
@@ -128,14 +130,6 @@ class Dados(private var imagenesDados: Array<ImageView>, private var dadosImagen
 
     fun getDadosCantidad(): Int {
         return dadosCantidad
-    }
-
-    fun setDadosCantidad(cantidad: Int){
-        dadosCantidad = cantidad
-    }
-
-    fun setBotonPulsado(boolean: Boolean){
-        botonPulsado = boolean
     }
 
     fun getBotonPulsado(): Boolean {

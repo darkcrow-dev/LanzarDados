@@ -54,10 +54,7 @@ class MainActivity : AppCompatActivity() {
         val arrayLayoutDados = arrayOf(parDados1, parDados2, parDados3)
 
         val dados = Dados(arrayDados, arrayDadosImagen, arrayLayoutDados, dadosIndicador, this)
-        dados.setBotonPulsado(false)
-        dados.setDadosCantidad(0)
         dados.inicializarDados(0)
-        dados.visualizarDados(0)
 
         botonLanzarDados.setOnClickListener {
             dados.lanzarDados(dados.getDadosCantidad(), 0)
