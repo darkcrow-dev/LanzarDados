@@ -61,11 +61,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         botonAgregar.setOnClickListener {
-            dados.agregarDados(dados.getBotonPulsado())
+            dados.agregarDados()
         }
 
         botonQuitar.setOnClickListener {
-            dados.quitarDados(dados.getBotonPulsado())
+            dados.quitarDados()
         }
     }
 }

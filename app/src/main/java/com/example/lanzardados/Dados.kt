@@ -30,7 +30,7 @@ class Dados(private var imagenesDados: Array<ImageView>, private var dadosImagen
         inicializarDados(contador + 1)
     }
 
-    fun visualizarDados(cantidad: Int){
+    private fun visualizarDados(cantidad: Int){
         when(cantidad){
             0 -> {
                 arrayLayoutDados[0].visibility = View.GONE
@@ -61,7 +61,7 @@ class Dados(private var imagenesDados: Array<ImageView>, private var dadosImagen
         }
     }
 
-    fun agregarDados(botonPulsado: Boolean){
+    fun agregarDados(){
         var texto = ""
         when(dadosCantidad){
             0 -> {
@@ -84,7 +84,7 @@ class Dados(private var imagenesDados: Array<ImageView>, private var dadosImagen
         }
     }
 
-    fun quitarDados(botonPulsado: Boolean){
+    fun quitarDados(){
         var texto = "0 DADOS"
         when(dadosCantidad){
             1 -> {
@@ -130,9 +130,5 @@ class Dados(private var imagenesDados: Array<ImageView>, private var dadosImagen
 
     fun getDadosCantidad(): Int {
         return dadosCantidad
-    }
-
-    fun getBotonPulsado(): Boolean {
-        return botonPulsado
     }
 }
