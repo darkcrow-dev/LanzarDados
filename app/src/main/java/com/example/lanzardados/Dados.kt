@@ -16,18 +16,16 @@ class Dados(private var imagenesDados: Array<ImageView>, private var dadosImagen
     private var dadosCantidad = 0
     private var botonPulsado = false
 
-    fun inicializarDados(contador: Int){
-        if(contador > 5){
-            botonPulsado = false
-            dadosCantidad = 0
-            val texto = "0 DADOS"
-            dadosIndicador.text = texto
-            visualizarDados(dadosCantidad)
-            return
+    fun inicializarDados(){
+        for(contador in 0 until 6){
+            imagenesDados[contador].visibility = View.GONE
         }
 
-        imagenesDados[contador].visibility = View.GONE
-        inicializarDados(contador + 1)
+        botonPulsado = false
+        dadosCantidad = 0
+        val texto = "0 DADOS"
+        dadosIndicador.text = texto
+        visualizarDados(dadosCantidad)
     }
 
     private fun visualizarDados(cantidad: Int){
@@ -108,24 +106,19 @@ class Dados(private var imagenesDados: Array<ImageView>, private var dadosImagen
         }
     }
 
-    fun lanzarDados(cantidad: Int, contador: Int){
-        if(dadosCantidad == 0){
+    fun lanzarDados(cantidad: Int){
+        if(cantidad == 0){
             Toast.makeText(contexto, "Seleccione la cantidad de dados a lanzar", Toast.LENGTH_SHORT).show()
             return
         }
 
-        lanzamiento(cantidad, contador)
-        visualizarDados(cantidad)
-        botonPulsado = true
-    }
-
-    private fun lanzamiento(cantidad: Int, contador: Int){
-        if (cantidad != 0) {
+        for(contador in 0 until cantidad){
             val aleatorio = Random.nextInt(0..5)
             imagenesDados[contador].setImageResource(dadosImagen[aleatorio])
             imagenesDados[contador].visibility = View.VISIBLE
-            lanzarDados(cantidad - 1, contador + 1)
         }
+
+        botonPulsado = true
     }
 
     fun getDadosCantidad(): Int {

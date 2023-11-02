@@ -26,8 +26,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var parDados3: LinearLayout
 
     private var arrayDadosImagen = arrayOf(R.drawable.dice_one, R.drawable.dice_two,
-                                           R.drawable.dice_three, R.drawable.dice_four,
-                                           R.drawable.dice_five, R.drawable.dice_six)
+        R.drawable.dice_three, R.drawable.dice_four,
+        R.drawable.dice_five, R.drawable.dice_six)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,10 +54,10 @@ class MainActivity : AppCompatActivity() {
         val arrayLayoutDados = arrayOf(parDados1, parDados2, parDados3)
 
         val dados = Dados(arrayDados, arrayDadosImagen, arrayLayoutDados, dadosIndicador, this)
-        dados.inicializarDados(0)
+        dados.inicializarDados()
 
         botonLanzarDados.setOnClickListener {
-            dados.lanzarDados(dados.getDadosCantidad(), 0)
+            dados.lanzarDados(dados.getDadosCantidad())
         }
 
         botonAgregar.setOnClickListener {
